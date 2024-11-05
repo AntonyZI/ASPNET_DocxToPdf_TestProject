@@ -1,0 +1,6 @@
+@IronPDFTestAPI_HostAddress = http://localhost:5251
+
+GET {{IronPDFTestAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

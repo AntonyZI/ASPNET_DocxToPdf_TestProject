@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Upload DOCX File";
+}
+
+<h1>Upload DOCX File</h1>
+
+<div>
+    <form asp-controller="File" asp-action="UploadDocx" enctype="multipart/form-data" method="post">
+        <div class="form-group">
+            <label for="file">Select DOCX file:</label>
+            <input type="file" name="file" id="file" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Upload and Convert</button>
+    </form>
+</div>
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success mt-3">
+        @ViewBag.Message
+    </div>
+}
